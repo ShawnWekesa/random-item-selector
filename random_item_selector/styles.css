@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	background: rgb(221 229 218 / 85%);
+	display: flex;
+	gap: 1em;
+	margin: 1em;
+	padding: 1em;
+	width: auto;
+	height: auto;
+}
+.item{
+	background: rgb(110 185 194);
+	width: 3em;
+	height: 3em;
+}
+.item.selected{
+/*	background: red;*/
+	transition: all 3s ease-in;
+}
