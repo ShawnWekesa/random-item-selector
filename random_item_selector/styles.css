@@ -9,15 +9,24 @@
 	gap: .5em;
 	margin: 1em;
 	padding: .5em;
-	width: auto;
+	width: 25em;
 	height: auto;
+	flex-wrap: wrap;
 }
 .item{
 	background: rgb(110 185 194);
 	width: 3em;
 	height: 3em;
+/*	transition: all 1s ease-in;*/
 }
 .item.selected{
-/*	background: red;*/
-	transition: all .1s ease-in;
+	 animation: flash .3s ease-in-out .1s 3;
+}
+@keyframes flash {
+  0% {
+    background: rgb(110 185 194);
+  }
+  50% {
+    background: red;
+  }
 }
