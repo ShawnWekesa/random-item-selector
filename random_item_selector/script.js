@@ -30,18 +30,24 @@ function randomFlash(){
 
 randomFlash()
 
-let ourArray = [1, 2, 3, 5, 9, 6];
-let dynamicArray = ourArray.slice(); 
-
-function arrey() {
-	if (dynamicArray.length > 1) {
-		let randomCondition = Math.floor(Math.random() * dynamicArray.length);
-    	let removedItem = dynamicArray.splice(randomCondition, 1);
-    	console.log(randomCondition, removedItem, dynamicArray);
-
-    	setTimeout(arrey, 200)
-	}
+for (let i = arr.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [arr[i], arr[j]] = [arr[j], arr[i]];
 }
 
+// let ourArray = [1, 2, 3, 5, 9, 6];
+// let dynamicArray = ourArray.slice(); 
 
-arrey();
+
+// function arrey() {
+// 	if (dynamicArray.length > 1) {
+// 		let randomCondition = Math.floor(Math.random() * dynamicArray.length);
+//     	let removedItem = dynamicArray.splice(randomCondition, 1);
+//     	console.log(randomCondition, removedItem, dynamicArray);
+
+//     	setTimeout(arrey, 200)
+// 	}
+// }
+
+
+// arrey();
